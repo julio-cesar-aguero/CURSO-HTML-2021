@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+  </head>
+  <body>
+    <!--Las listas en HTML sirven para listar contenido. 
+        En funcion del tipo de contenido de nuestra lista 
+        tenemos tres tipos de listas:
+        
+        ul -> unordered list: se utilizan cuando el orden de
+        los elementos no influye(lista de la compra)
+
+        ol -> ordered  list: Se utiliza(n cuando el orden
+        de los elementos es importante (top 10)
+
+        dl -> definition list: Se utilizan para hacer una lista
+        de definiciones (diccionario)
+
+    -->
+    <h1>Listas</h1>
+
+    <!--semantica correcta de un menu-->
+    <nav>
+      <ul>
+        <li><a href="#post-1">Post 1</a></li>
+        <li><a href="#post-2">Post 2</a></li>
+        <li><a href="#post-3">Post 3</a></li>
+        <li><a href="#post-4">Post 4</a></li>
+        <li><a href="#post-5">Post 5</a></li>
+      </ul>
+    </nav>
+    <h2>LISTA DE COMPRA</h2>
+    <ul>
+      <li>Pan</li>
+      <li>Huevos</li>
+      <li>Leche</li>
+    </ul>
+    <h2>ORDEN DE APRENDIZAJE EN EL DESARROLLO WEB</h2>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JAVASCRIPT</li>
+    </ol>
+    <h2>LENGUAJES PARA EL DESARROLLO WEB</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        HYPERTEXT MARKUP LANGUAJE: ES UN LENGUAJE DE MARCADO QUE SE USA PARA
+        ESTRUCTURAR DATOS EN UNA PAGINA WEB
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        CASCADE STYLE SHEETS: ES UN LENGUAJE DE DISEÑO QUE SE UTILIZA PARA DAR
+        ESTILOS AL HTML
+      </dd>
+      <dt>JAVASCRIPT</dt>
+      <dd>
+        ES UN LENGUAJE DE PROGRAMACION PARA DAR INTERACTIVIDAD A UN SITIO WEB
+      </dd>
+    </dl>
+    <!--
+      Atributos de las listas
+      
+      ol ->
+          type: Estilo de numeracion (1, A, a, I, i)
+          start: Estilo de las secuencia (un numero)
+      ul -> 
+          type: Estilo de los items (disc, square,circle)
+    -->
+    <h2>Atributos en las listas</h2>
+    <ul type="circle">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+    <ol type="i" start="4">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+  </body>
+</html>

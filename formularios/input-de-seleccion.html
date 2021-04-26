@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+    radio: permite seleccionar una unica opcion de una lista
+    de opciones relacionadas
+
+    checkbox: permite seleccionar varias opciones de una lista
+    de opciones relacionadas
+
+    select: crea una lista de opciones donde podemos seleccionar
+    una o varias opciones
+
+    Cada opcion ira dentro de una etiqueta <option> </option>
+
+    Si tenemos muchas opciones podemos ordenarlas por categorias
+    a traves de la etiqueta <optgroup> con el atributo label para
+    nombrar la categoria
+
+-->
+<!--radio-->
+
+<body>
+      <h1>elementos seleccionables</h1>
+<div>
+    <form>
+        <h2>Genero</h2>
+        <label>
+            masculino
+            <input type="radio" value="masculino" name="gender"> 
+        </label>
+        <label>
+            femenino
+            <input type="radio" value="femenino" name="gender"> 
+        </label>
+        <label>
+            desconocido
+            <input type="radio" value="desconocido" name="gender"> 
+        </label>
+    </form>
+</div>
+<!--
+    
+-->
+<div>
+    <form>
+        <H2>CHECKBOX</H2>
+        <label>
+            HTML
+            <input type="checkbox" name="languages" value="html">
+        </label>
+
+        <label>
+            JavaScript
+            <input type="checkbox" name="languages" value="html">
+        </label>
+
+
+        <label>
+            CSS
+            <input type="checkbox" name="languages" value="html">
+        </label>
+
+
+        </label>
+
+    </form>
+</div>
+<!--
+
+-->
+<div>
+    <form>
+        <h2>Select</h2>
+        <select name="languajes" multiple>
+            <option value="html">HTML</option>
+            <option value="html">css</option>
+            <option value="html">javascript</option>
+        </select>
+    </form>
+</div>
+
+<div>
+    <form>
+        <h2>Select AVANZADO</h2>
+        <select name="mascotas">
+            <optgroup label="4 patas"></optgroup>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="hamster">Hamster</option>
+            <option value="conejo">Conejo</option>
+            </optgroup>
+            <optgroup label="aves">
+            <option value="loro">Loro</option>
+            <option value="canario">Canario</option>
+            </optgroup>
+            <optgroup label="otro">
+            <option value="serpiente">Serpiente</option>
+            <option value="tarantula">Tarantula</option>
+            </optgroup>
+
+        </select>
+    </form>
+</div>
+<!--elementos seleccionables-->
+<div>
+    <h2>Datalist</h2>
+    <form>
+        <input type="list" list="mascotas">
+    <datalist id="mascotas">
+        <option value="gato"></option>
+        <option value="hamster"></option>
+        <option value="perro"></option>
+        <option value="conejo"></option>
+    </datalist>
+
+    </form>
+</div>
+  </body>
+</html>

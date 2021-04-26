@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<!--
+    input type:
+      button: se comporta igual que un boton
+      color:  se utiliza para especificar un color
+      date:   se utiliza para introducir una fecha
+      datatime: obsoleto
+      datetime-local: fecha y hora, no funciona en firefox
+      email:  se utiliza para intoducir un e-mail
+      hidden: campo oculto, puede contener valor pero no se mostrara
+      month:   se utiliza para introducir un mes
+      number: se utiliza para valores numericos
+      password: se utliza para contraseñas
+      range: se utliza para establecer un rango
+      reset: se utiliza resetear el formulario
+      search: se utiliza para las barras de busqueda
+      submit: se utiliza para enviar el formulario
+      tel: se utiliza para introducir numeros telefonicos
+      text: valor por defecto
+      time: se utiliza para introducir una hora
+      url: se utiliza para introducir urls
+      week: se utiliza para introducir el numero de semana del año
+-->
+<body>
+    <form>
+        <input>
+        <input type="submit" value="Enviar">
+
+<!--Fecha-->
+    </form>
+    <form>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="datetime">
+        <input type="month">
+        <input type="week">
+    </form>
+<!--Moviles-->
+    <form>
+        <div>
+        <label>search <input type="search">
+        </label>
+        </div>
+        <div>
+        <label>telefono <input type="tel">
+        </label>
+        </div>
+        <div>
+        <label>email <input type="email">
+        </label>
+        </div>
+        <div>
+        <label>password <input type="password">
+        </label>
+        </div>
+        <div>
+        <label>url <input type="url">
+        </label>
+        </div>
+    </form>
+<!--  
+    
+-->
+    <input type="color">
+    <input type="number">
+    <input type="range" step="50" min="0" max="10">
+    <input type="hidden">
+</body>
+</html>

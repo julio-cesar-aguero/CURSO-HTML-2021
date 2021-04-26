@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contenido embebido</title>
+  </head>
+  <body>
+    <h1>contenido embebido</h1>
+    <!--
+     <img srcset="
+     /contenido-embebido/assets/images/portada2.jpg , 
+     /contenido-embebido/assets/images/portada-m.jpg 3x" src="/contenido-embebido/assets/images/portada2.jpg" alt="imagen de portada" >
+    -->
+
+    <picture>
+        <!--
+      <source
+        srcset="
+          /contenido-embebido/assets/images/portada2.jpg,
+          /contenido-embebido/assets/images/portada-m.jpg"
+      />-->
+      <source srcset="/contenido-embebido/assets/images/portada2.jpg" media="(max-width:380px)">
+      <img src="/contenido-embebido/assets/images/portada-m.jpg" alt="" />
+    </picture>
+  </body>
+</html>
